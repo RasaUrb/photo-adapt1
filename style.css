@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+   background-color: rgb(168, 160, 148);
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding: 2%;
+}
+img{
+    width: 100%
+}
+ .colection{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  @media screen and (min-width:640px){
+  .colection{
+  grid-template-columns: repeat(2, 1fr)
+  }
+    
+  }
+  
+  @media screen and (min-width:768px){
+  .colection{
+  grid-template-columns: repeat(3, 1fr)
+  }
+    
+  }
+  
+  @media screen and (min-width:1024px){
+  .colection{
+  grid-template-columns: repeat(4, 1fr)
+  }
+    
+  }
